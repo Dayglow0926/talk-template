@@ -176,7 +176,7 @@
 }
 
 .music-content__singer-song-list li > div > img {
-  width: 60px;
+  width: 100%;
   height: 60px;
   object-fit: cover;
 }
@@ -186,7 +186,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 28%;
+  width: 90px;
   height: 28%;
   overflow: hidden;
   border-radius: 8px;
