@@ -1,0 +1,250 @@
+.singer-component {
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  padding: 10px 5px;
+
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.singer-component__column {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 50%;
+  margin: 0px 7px;
+
+  width: 100px;
+  height: 100px;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.singer-component__column span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+
+  opacity: 0;
+  cursor: pointer;
+}
+/*pc에만 hover*/
+@media (hover: hover) {
+  .singer-component__column:hover span {
+    border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: 700;
+
+    opacity: 1;
+  }
+}
+
+.singer-component__column.select span {
+  border-radius: 50%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: 700;
+
+  opacity: 1;
+}
+
+.singer-component__column:first-child {
+  background-image: url("https://w.namu.la/s/1e52271f9f7c673d81947f20552df1d4376d0095281180ee5486e13538f0cde044b3ec82503531bb3c94e6918f57f9c8213049032527f330fedcd2ab253458ccb762334d699e9cb86f6ebb13ba21ec2ce4098d66ad68939cf11bbc3b2d09dc11467bf6dbda758de172915fd536a56dc1");
+  background-color: whitesmoke;
+}
+
+.singer-component__column:nth-child(2) {
+  background-image: url("../../img/ine.png");
+  background-color: whitesmoke;
+}
+
+.singer-component__column:nth-child(3) {
+  background-image: url("../../img/jingbuger.png");
+  background-color: whitesmoke;
+}
+
+.singer-component__column:nth-child(4) {
+  background-image: url("../../img/lilpa.jpg");
+  background-color: whitesmoke;
+}
+
+.singer-component__column:nth-child(5) {
+  background-image: url("../../img/jururu.png");
+  background-color: whitesmoke;
+}
+
+.singer-component__column:nth-child(6) {
+  background-image: url("../../img/gosegu.png");
+  background-color: whitesmoke;
+}
+
+.singer-component__column:nth-child(7) {
+  background-image: url("../../img/viichan.png");
+  background-color: whitesmoke;
+}
+
+.music-list__new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 80px;
+  padding: 7px 10px;
+
+  border-radius: 10px;
+}
+
+.music-list__new > div {
+  height: 100%;
+}
+
+.music-list__new-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 700;
+  line-height: 1.2rem;
+}
+
+.music-list__new-info span:not(:nth-child(2)) {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.music-list__new-info span:nth-child(2) {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.music-list__new img {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 10px;
+}
+
+.music-list__popular {
+  margin: 20px 0px;
+}
+
+.music-list__popular > span {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 20px 0px;
+}
+/* --- ----*/
+.music-content__singer-song-list {
+  max-height: 0;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+
+  padding: 0px 10px;
+  border-radius: 15px;
+
+  transition: all 0.8s ease;
+}
+
+.music-content__singer-song-list.select {
+  max-height: 100vw;
+}
+
+@keyframes list-show {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: inherit;
+  }
+}
+
+.music-content__singer-song-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 4% 0.5% 0.7%;
+  border-radius: 15px;
+}
+
+.music-content__singer-song-list li > div > img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.music-content__singer-song-list li div:first-child {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
+  height: 28%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.music-content__singer-song-list li div:first-child > div {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.music-content__singer-song-list li > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.music-content__singer-song-list li > div > span {
+  width: 137px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.music-content__singer-song-list li > div:nth-child(2) span {
+  line-height: 1.7;
+}
+
+.music-content__singer-song-list li > div:nth-child(2) span:first-child {
+  font-size: 0.75em;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.music-content__singer-song-list li > div:nth-child(2) span:nth-child(2) {
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.music-content__singer-song-list li > i {
+  margin: 0px 8%;
+  opacity: 0.4;
+}
+
+li.playing > div:first-child > .music-content__singer-song-play {
+  display: flex;
+}
+
+.music-content__singer-song-list li:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.music-content__singer-song-list li:hover .music-content__singer-song-play {
+  display: flex;
+}
