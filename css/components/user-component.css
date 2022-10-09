@@ -1,0 +1,115 @@
+.user-component {
+  justify-content: space-between;
+  margin-top: 7px;
+  padding: 10px 10px;
+  border-radius: 10px;
+
+  transition: box-shadow 0.3s linear;
+}
+
+.user-component:hover:not(.main) {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/*프로필 기본 사이즈*/
+.user-component__avatar {
+  width: 70px;
+  height: 70px;
+
+  margin-right: 15px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.user-component__avatar--xl {
+  width: 75px;
+  height: 75px;
+
+  border-radius: 30px;
+}
+
+.user-component__avatar--sm {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 20px;
+}
+
+.user-component__title {
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.user-component__title.main {
+  font-size: 22px;
+}
+
+.user-component__title--not-bold {
+  font-weight: 700;
+}
+
+.user-component__subtitle {
+  margin-top: 9px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-component__time {
+  display: block;
+  padding: 6px 3px 10px 0px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.user-component__subtitle > i.warning_icon {
+  margin-left: 7px;
+  color: tomato;
+}
+
+.user-component__column.music {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 13px;
+  border: 2px solid rgb(55, 107, 70);
+  color: rgb(55, 107, 70);
+  padding: 5px 10px;
+  border-radius: 20px;
+
+  transition: box-shadow 0.2s linear;
+}
+
+.user-component__column.music:hover {
+  box-shadow: 0px 0px 15px rgba(115, 154, 116, 0.4);
+}
+
+.user-component__column.music i {
+  margin-left: 6px;
+}
+
+.user-component__column.music span {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

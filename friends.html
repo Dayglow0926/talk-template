@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isegye Idol Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <!-- 폰으로 접속시 사라지는 것도 고려 -->
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>15:49</span>
+        <!-- JS를 배우고나서 리얼 타임으로 변경도 고려 -->
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-lock fa-xs"></i>
+        <span>10%</span>
+        <i class="fa-solid fa-battery-quarter fa-lg"></i>
+        <i class="fa-solid fa-bolt fa-xs"></i>
+      </div>
+    </div>
+
+    <div class="music-nav">
+      <div class="animation-view__rhythm">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icon">
+        <span>
+          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-music fa-lg"></i>
+        </span>
+        <span>
+          <a href="setting.html"><i class="fa-solid fa-gear fa-lg"></i></a>
+        </span>
+      </div>
+    </header>
+
+    <a id="friends-display-link" href="#">
+      <i class="fa-solid fa-circle-info"></i>
+      Friends' Names Display
+      <i class="fa-solid fa-angle-right fa-xs"></i>
+    </a>
+
+    <main class="main-screen">
+      <div class="user-component main">
+        <div class="user-component__column">
+          <img
+            class="user-component__avatar user-component__avatar--xl"
+            src="img/default.png"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title main">You</h4>
+            <!--<h6 class="user-component__subtitle">콜라 맛있어!!</h6>-->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="main-screen__channel">
+        <div class="main-screen__category">Channel</div>
+        <div class="main-screen__channel-lists">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                class="user-component__avatar user-component__avatar--sm"
+                src="https://w.namu.la/s/f99dbf4ce7f02fc9b75572f63ea0352d1548ae7e7b04a95fe0541f2d8462be10c0cea4aedc206705b9b52b411436aa3afd08e102f59f8683cfa5a59626b2baa0e3ae000c4cd692d1a2784744471f9374cda5149285d0cec1bb3f69b32e82c5f7"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  WAK Entertainment
+                </h4>
+                <!--<h6 class="user-component__subtitle">콜라 맛있어!!</h6>-->
+              </div>
+            </div>
+            <div class="user-component__column">
+              <div>
+                <span>2</span>
+                <i class="fa-solid fa-angle-right fa-sm"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-screen__friends">
+        <div class="main-screen__category">Friends</div>
+        <div class="main-screen__friends-lists">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                class="user-component__avatar user-component__avatar--sm"
+                src="img/ine.png"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  INE
+                </h4>
+                <h6 class="user-component__subtitle">하이네!</h6>
+              </div>
+            </div>
+            <div class="user-component__column music">
+              <span>INE - 신호등 (cover)</span>
+              <i class="fa-solid fa-play fa-2xs"></i>
+            </div>
+          </div>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                class="user-component__avatar user-component__avatar--sm"
+                src="img/jingbuger.png"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  JINGBURGER
+                </h4>
+                <h6 class="user-component__subtitle">하끄냥!!</h6>
+              </div>
+            </div>
+            <div class="user-component__column music">
+              <span>JINGBURGER - TOMBOY (cover)</span>
+              <i class="fa-solid fa-play fa-2xs"></i>
+            </div>
+          </div>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                class="user-component__avatar user-component__avatar--sm"
+                src="img/lilpa.jpg"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  LILPA
+                </h4>
+                <h6 class="user-component__subtitle">리이일〜파아아아!!!</h6>
+              </div>
+            </div>
+            <div class="user-component__column music">
+              <span>LILPA - 마지막 재회 (cover)</span>
+              <i class="fa-solid fa-play fa-2xs"></i>
+            </div>
+          </div>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                class="user-component__avatar user-component__avatar--sm"
+                src="img/jururu.png"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  JURURU
+                </h4>
+                <h6 class="user-component__subtitle">밍나~ 콘르르 콘르르!</h6>
+              </div>
+            </div>
+            <div class="user-component__column music">
+              <span>JURURU - M@STERPIECE (cover)</span>
+              <i class="fa-solid fa-play fa-2xs"></i>
+            </div>
+          </div>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                class="user-component__avatar user-component__avatar--sm"
+                src="img/gosegu.png"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  GOSEGU
+                </h4>
+                <h6 class="user-component__subtitle">킹~ 아!</h6>
+              </div>
+            </div>
+            <div class="user-component__column music">
+              <span>GOSEGU - _ Bom (cover)</span>
+              <i class="fa-solid fa-play fa-2xs"></i>
+            </div>
+          </div>
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                class="user-component__avatar user-component__avatar--sm"
+                src="img/viichan.png"
+              />
+              <div class="user-component__text">
+                <h4
+                  class="user-component__title user-component__title--not-bold"
+                >
+                  VIICHAN
+                </h4>
+                <h6 class="user-component__subtitle">나 멜론 36위 가수야!</h6>
+              </div>
+            </div>
+            <div class="user-component__column music">
+              <span>VIICHAN - 취기를 빌려 (cover)</span>
+              <i class="fa-solid fa-play fa-2xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <i class="fa-solid fa-user-large fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">7</span>
+            <i class="fa-solid fa-comment-dots fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="music.html">
+            <span class="nav__notification badge"></span>
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="no-mobile">
+      <img src="img/ine-size-alert.gif" alt="" />
+      <p>
+        해당페이지는 모바일 최적화 페이지입니다. <br />
+        화면을 줄여주세요.
+      </p>
+    </div>
+
+    <div class="loading">
+      <img src="clone-page-screenshot/hikariga.png" alt="" />
+      <span>잠시만 기다려주세요.....</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a4852596ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/time.js"></script>
+  </body>
+</html>
