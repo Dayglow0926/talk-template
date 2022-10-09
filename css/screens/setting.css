@@ -1,0 +1,44 @@
+.settings-manu__line {
+  display: flex;
+  align-items: center;
+  margin: 12px 0px;
+  outline: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.settings-manu {
+  padding: 10px 21px;
+  box-sizing: border-box;
+}
+
+.settings-manu-column {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.settings-manu-column i {
+  width: 25px;
+  margin-right: 20px;
+}
+.settings-manu-column span {
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.settings-manu-column:last-child {
+  opacity: 0.5;
+}
+
+.settings-manu li {
+  display: flex;
+  padding: 25px 13px;
+  justify-content: space-between;
+}
+
+.settings-manu li:nth-child(n + 2) {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.setting-icons__icon-notification {
+  font-size: 13px !important;
+}

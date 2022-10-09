@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isegye Idol Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <!-- 폰으로 접속시 사라지는 것도 고려 -->
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>15:49</span>
+        <!-- JS를 배우고나서 리얼 타임으로 변경도 고려 -->
+      </div>
+      <div class="status-bar__column">
+        <i class="fa-solid fa-lock fa-xs"></i>
+        <span>10%</span>
+        <i class="fa-solid fa-battery-quarter fa-lg"></i>
+        <i class="fa-solid fa-bolt fa-xs"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back()"
+          ><i class="fa-solid fa-angle-left fa-2x"></i
+        ></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__column-title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+      </div>
+    </header>
+
+    <main class="settings-screen">
+      <ul class="settings-manu">
+        <li>
+          <div class="settings-manu-column">
+            <i class="fa-solid fa-bullhorn fa-xl"></i>
+            <span>Notices</span>
+          </div>
+          <div class="settings-manu-column"></div>
+        </li>
+        <li>
+          <div class="settings-manu-column">
+            <i class="fa-solid fa-flask fa-xl"></i>
+            <span>Mokoko Lab</span>
+          </div>
+          <div class="settings-manu-column"></div>
+        </li>
+        <li>
+          <div class="settings-manu-column">
+            <i class="fa-solid fa-circle-info fa-xl"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings-manu-column">
+            <span></span>
+          </div>
+        </li>
+      </ul>
+      <div class="settings-manu__line"></div>
+      <ul class="settings-manu">
+        <li>
+          <div class="settings-manu-column">
+            <i class="fa-solid fa-lock fa-xl"></i>
+            <span>Privacy</span>
+            <span></span>
+          </div>
+          <div class="settings-manu-column">
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <div class="settings-manu-column">
+            <i class="fa-solid fa-bell fa-xl"></i>
+            <span>Notifications</span>
+            <span></span>
+          </div>
+          <div class="settings-manu-column">
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <div class="settings-manu-column">
+            <i class="fa-solid fa-user fa-xl"></i>
+            <span>Friends</span>
+            <span></span>
+          </div>
+          <div class="settings-manu-column">
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <div class="settings-manu-column">
+            <i class="fa-solid fa-comment fa-xl"></i>
+            <span>Chats</span>
+            <span></span>
+          </div>
+          <div class="settings-manu-column">
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <div class="settings-manu-column">
+            <i class="fa-solid fa-circle-half-stroke fa-xl"></i>
+            <span>Display</span>
+            <span class="setting-icons__icon-notification badge">N</span>
+          </div>
+          <div class="settings-manu-column">
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <div class="settings-manu-column">
+            <i class="fa-solid fa-brush fa-xl"></i>
+            <span>Themes</span>
+            <span class="setting-icons__icon-notification badge">N</span>
+          </div>
+          <div class="settings-manu-column">
+            <span>Default theme</span>
+          </div>
+        </li>
+        <li>
+          <div class="settings-manu-column">
+            <i class="fa-solid fa-phone fa-xl"></i>
+            <span>Call</span>
+            <span></span>
+          </div>
+          <div class="settings-manu-column">
+            <span></span>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-solid fa-user-large fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">2</span>
+            <i class="fa-solid fa-comment-dots fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__notification badge"></span>
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="no-mobile">
+      <img src="clone-page-screenshot/no.jpg" alt="" />
+      <p>
+        해당페이지는 모바일 최적화 페이지입니다. <br />
+        화면을 줄여주세요.
+      </p>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a4852596ef.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
