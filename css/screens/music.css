@@ -154,7 +154,7 @@
 }
 
 .music-content__singer-song-list.select {
-  max-height: 100vw;
+  max-height: 100vh;
 }
 
 @keyframes list-show {
