@@ -40,7 +40,6 @@ img {
   align-items: center;
 }
 .play-music {
-  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
