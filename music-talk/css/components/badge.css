@@ -1,0 +1,21 @@
+.badge {
+  background-color: tomato;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 11.5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+}
+
+.badge:empty {
+  width: 5px;
+  height: 5px;
+}
+
+.user-component__column .badge:empty {
+  display: none;
+}

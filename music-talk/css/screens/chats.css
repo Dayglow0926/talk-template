@@ -1,0 +1,13 @@
+.main-screen > a > div {
+  border-radius: 10px;
+  padding: 8px 8px;
+  transition: box-shadow 0.5s;
+}
+
+.main-screen > a:hover > div {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.main-screen > a:hover .badge {
+  animation: notification_animation 2s ease-in-out infinite;
+}

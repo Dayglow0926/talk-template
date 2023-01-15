@@ -1,0 +1,137 @@
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  text-align: center;
+}
+
+.find-icons__icon i {
+  font-size: 33px;
+}
+
+.find-icons__icon span {
+  font-size: 0.5rem;
+}
+
+.find-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  height: 70px;
+}
+
+.find-icons__icon-notification {
+  position: absolute;
+  right: -4px;
+  top: -4px;
+}
+
+.recommended-friends {
+  border-top: var(--main-border);
+  margin: 32px 0px 22px 0px;
+}
+
+.recommended-friends__title {
+  opacity: 0.6;
+}
+
+.recommended-friends span {
+  display: block;
+  margin: 108px 0px 92px 0px;
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+.open-chat__header span {
+  opacity: 0.5;
+}
+
+.open-post__title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.open-post__hashtag {
+  font-size: 13px;
+  font-weight: 700;
+  opacity: 0.3;
+}
+
+.open-post__members {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.open-post__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__members-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.open-post__members .divider {
+  width: 1.5px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.open-post__members-status {
+  color: rgb(255, 104, 129);
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 110px;
+  height: 110px;
+  border-radius: 10%;
+  border: 2px solid var(--mokoko-green);
+}
+
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  position: absolute;
+  padding: 6px 9px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  bottom: 12px;
+  right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
+}

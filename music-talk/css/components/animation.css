@@ -1,0 +1,73 @@
+@keyframes turn-gear {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes notification_animation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-4px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes heart-beat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+    color: tomato;
+  }
+  100% {
+    transform: nont;
+  }
+}
+
+.screen-header i.fa-gear {
+  animation: turn-gear 2s linear infinite;
+}
+
+.nav .nav__btn .nav__notification {
+  animation: notification_animation 2s ease-in-out infinite;
+}
+
+.open-post__heart-count > i {
+  will-change: transform;
+  animation: heart-beat 2s ease-in-out infinite;
+}
+
+.footer-input {
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-input:focus-within {
+  transform: translateY(55px);
+}
+
+.footer-input .input-screen__content {
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0px);
+}
+
+.footer-input:focus-within .input-screen__content {
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-55px);
+}
+
+.footer-input .input-screen > i {
+  transition: all 0.05s ease-in-out;
+}
+
+.footer-input:focus-within .input-screen > i {
+  width: 0px;
+  margin-right: 0px;
+}

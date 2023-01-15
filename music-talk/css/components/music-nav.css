@@ -1,0 +1,100 @@
+.music-nav {
+  background-image: url("../../img/rewind.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 10px;
+
+  position: fixed;
+  right: 10px;
+
+  margin: auto 0;
+  top: 0px;
+  bottom: 0px;
+
+  z-index: 2;
+}
+
+.animation-view__rhythm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+.animation-view__rhythm div {
+  background-color: white;
+  border: 4px solid white;
+  height: 30px;
+  width: 0px;
+  opacity: 0.5;
+
+  transform-origin: bottom;
+}
+
+.animation-view__rhythm div:first-child {
+  animation: rhythm_animation 1s ease-in-out infinite;
+}
+.animation-view__rhythm div:nth-child(2) {
+  animation: rhythm_animation_2 1s ease-in-out infinite;
+  animation-delay: 0.05s;
+}
+.animation-view__rhythm div:nth-child(3) {
+  animation: rhythm_animation 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+@keyframes rhythm_animation {
+  0% {
+    transform: scale(1, 0.8);
+  }
+  5% {
+    transform: scale(1, 0.9);
+  }
+  10% {
+    transform: scale(1, 0.8);
+  }
+  15% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.8);
+  }
+  100% {
+    transform: scale(1, 0.8);
+  }
+}
+
+@keyframes rhythm_animation_2 {
+  0% {
+    transform: scale(1, 0.8);
+  }
+  10% {
+    transform: scale(1, 0.8);
+  }
+  15% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.8);
+  }
+  60% {
+    transform: scale(1, 0.8);
+  }
+  65% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 0.8);
+  }
+}

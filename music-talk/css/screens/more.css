@@ -1,0 +1,70 @@
+.more-message__icon {
+  color: rgba(0, 0, 0, 1) !important;
+  font-size: 30px;
+}
+
+.more-service {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.more-service__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  width: 25%;
+  position: relative;
+}
+
+.more-service__column > i {
+  margin-bottom: 15px;
+  font-size: 32px;
+}
+.more-service__column > span {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.more-icons__icon-notification {
+  position: absolute;
+  top: -8px;
+  right: 30px;
+}
+
+.suggestions {
+  border-top: 1.25px solid rgba(0, 0, 0, 0.1);
+  padding-top: 30px;
+}
+.suggestions-header {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.suggestions-body {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.suggestions-body__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  width: 25%;
+}
+
+.suggestions-body__column-img {
+  height: 60px;
+  width: 60px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+
+.suggestions-body__column span {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.65);
+}

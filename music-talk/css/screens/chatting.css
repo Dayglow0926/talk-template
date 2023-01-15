@@ -1,0 +1,156 @@
+.chatting-screen {
+  background-color: rgb(255, 255, 255);
+  padding-top: 92px;
+}
+
+.chatting-screen__header {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  transform: translate3d(0, 0, 0);
+  box-sizing: border-box;
+  width: 100vw;
+  top: 25px;
+  z-index: 9;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+}
+.message-screen__date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message-screen__date span {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+.message-screen {
+  padding: 0px 18px;
+}
+
+.message-screen__other,
+.message-screen__user {
+  display: flex;
+  margin-top: 20px;
+}
+
+.message-screen__user {
+  justify-content: flex-end;
+}
+
+.message-screen__other img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.message-screen__other .message-info {
+  margin-left: 10px;
+}
+
+.message-info__content {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message-screen__user .message-info__content {
+  flex-direction: row-reverse;
+}
+
+.message-screen__other .message-info__name {
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.message-info__content-bubble {
+  padding: 13px;
+  font-size: 18px;
+  border-radius: 15px;
+  font-weight: 600;
+  display: block;
+  word-break: break-all;
+  line-height: 150%;
+}
+
+.message-screen__other .message-info__content-bubble {
+  background-color: rgb(144, 144, 144);
+  border-top-left-radius: 0px;
+}
+
+.message-screen__user .message-info__content-bubble {
+  background-color: whitesmoke;
+  border-top-right-radius: 0px;
+  color: black;
+}
+
+.message-info__content-time {
+  font-size: 12px;
+  opacity: 0.7;
+  margin: 0px 8px;
+}
+
+.footer-input {
+  position: fixed;
+  transform: translate3d(0, 0, 0);
+  bottom: 0px;
+}
+.footer-input .input-screen {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 20px;
+  width: 100vw;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.input-screen > i {
+  margin-right: 20px;
+}
+
+.input-screen__content {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.input-screen__content input {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  height: 35px;
+  width: inherit;
+  border-radius: 30px;
+  padding: 5px 80px 5px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  resize: none;
+  outline: none;
+}
+
+.input-screen__content > i,
+.input-screen__content > button {
+  position: absolute;
+}
+
+.input-screen__content > button {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(144, 144, 144);
+  right: 3px;
+}
+
+.input-screen__content > i {
+  right: 40px;
+}
+
+.input-screen__content > button:hover {
+  cursor: pointer;
+}
